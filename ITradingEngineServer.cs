@@ -1,4 +1,4 @@
-namespace TradineEngineServer.Core;
+namespace TradingEngineServer.Core;
 
 interface ITradingEngineServer
 {

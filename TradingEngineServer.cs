@@ -1,10 +1,10 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using TradineEngineServer.Core.Configuration;
+using TradingEngineServer.Core.Configuration;
 
-namespace TradineEngineServer.Core;
-class TradingEngineServer : BackgroundService, ITradingEngineServer
+namespace TradingEngineServer.Core;
+sealed class TradingEngineServer : BackgroundService, ITradingEngineServer
 {
     private readonly ILogger<TradingEngineServer> _logger;
     private readonly TradingEngineServerConfiguration _config;
