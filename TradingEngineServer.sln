@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingEngineServer", "TradingEngineServer.csproj", "{BA694226-E48F-45CE-8A84-EDCE4CA4264F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA694226-E48F-45CE-8A84-EDCE4CA4264F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA694226-E48F-45CE-8A84-EDCE4CA4264F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA694226-E48F-45CE-8A84-EDCE4CA4264F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA694226-E48F-45CE-8A84-EDCE4CA4264F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
