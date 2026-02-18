@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d697d7a-1333-4f5f-ac5e-345d85588c53" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TradingEngineServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TradingEngineServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoggingCS/AbstractLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LoggingCS/AbstractLogger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TradingEngineServer.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngineServer.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +30,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ITradingEngineServer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LoggingCS/AbstractLogger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LoggingCS/Class1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LoggingCS/ILogger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LoggingCS/LogLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TradingEngineServer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TradingEngineServerConfiguration/TradingEngineServerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TradingEngineServerHostBuilder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -95,7 +96,7 @@
       <workItem from="1771320212023" duration="3445000" />
       <workItem from="1771328329800" duration="5912000" />
       <workItem from="1771355581689" duration="6426000" />
-      <workItem from="1771439990866" duration="2889000" />
+      <workItem from="1771439990866" duration="3854000" />
     </task>
     <servers />
   </component>
