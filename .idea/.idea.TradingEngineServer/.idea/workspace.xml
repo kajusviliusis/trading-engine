@@ -7,7 +7,9 @@
     <list default="true" id="6d697d7a-1333-4f5f-ac5e-345d85588c53" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TradingEngineServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TradingEngineServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LoggingCS/AbstractLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LoggingCS/AbstractLogger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngineServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngineServer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TradingEngineServer.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngineServer.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngineServerHostBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngineServerHostBuilder.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +33,10 @@
     <setting file="file://$PROJECT_DIR$/ITradingEngineServer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LoggingCS/AbstractLogger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LoggingCS/ILogger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LoggingCS/ITextLogger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LoggingCS/LogLevel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LoggingCS/LoggerType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LoggingCS/TextLogger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TradingEngineServer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TradingEngineServerConfiguration/TradingEngineServerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TradingEngineServerHostBuilder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/TradingEngineServer.csproj.nuget.dgspec.json" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -96,13 +102,14 @@
       <workItem from="1771320212023" duration="3445000" />
       <workItem from="1771328329800" duration="5912000" />
       <workItem from="1771355581689" duration="6426000" />
-      <workItem from="1771439990866" duration="3854000" />
+      <workItem from="1771439990866" duration="5089000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

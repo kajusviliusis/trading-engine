@@ -2,17 +2,18 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using TradingEngineServer.Core.Configuration;
+using TradingEngineServer.Logging;
 
 namespace TradingEngineServer.Core;
 sealed class TradingEngineServer : BackgroundService, ITradingEngineServer
 {
-    private readonly ILogger<TradingEngineServer> _logger;
-    private readonly TradingEngineServerConfiguration _config;
+    private readonly ITextLogger _logger;
+    private readonly IOptions<TradingEngineServerConfiguration> _config;
     
-    public TradingEngineServer(ILogger<TradingEngineServer> logger, IOptions<TradingEngineServerConfiguration> config)
+    public TradingEngineServer(ITextLogger textLogger, IOptions<TradingEngineServerConfiguration> config)
     {
-        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-        _config = config.Value ?? throw new ArgumentNullException(nameof(config));
+        _logger = textLogger ?? throw new ArgumentNullException(nameof(textLogger));
+        _config = config ?? throw new ArgumentNullException(nameof(config));
     }
     protected Task ExecueAsync(CancellationToken stoppingToken)
     {
