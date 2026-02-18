@@ -6,20 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="6d697d7a-1333-4f5f-ac5e-345d85588c53" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TradingEngineServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TradingEngineServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITradingEngineServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ITradingEngineServer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TradingEngineServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngineServer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TradingEngineServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngineServer.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TradingEngineServerConfiguration/TradingEngineServerConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngineServerConfiguration/TradingEngineServerConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/TradingEngineServer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/TradingEngineServer.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/TradingEngineServer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/TradingEngineServer.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/TradingEngineServer.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/TradingEngineServer.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/TradingEngineServer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TradingEngineServerConfiguration/TradingEngineServerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TradingEngineServerHostBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TradingEngineServerServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/TradingEngineServer.csproj.nuget.dgspec.json" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -52,6 +51,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;.NET Project.TradingEngineServer.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
@@ -94,7 +94,8 @@
       <updated>1771320211519</updated>
       <workItem from="1771320212023" duration="3445000" />
       <workItem from="1771328329800" duration="5912000" />
-      <workItem from="1771355581689" duration="3032000" />
+      <workItem from="1771355581689" duration="6426000" />
+      <workItem from="1771439990866" duration="621000" />
     </task>
     <servers />
   </component>

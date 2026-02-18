@@ -14,14 +14,20 @@ sealed class TradingEngineServer : BackgroundService, ITradingEngineServer
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         _config = config.Value ?? throw new ArgumentNullException(nameof(config));
     }
-    protected override Task ExecuteAsync(CancellationToken stoppingToken)
+    protected Task ExecueAsync(CancellationToken stoppingToken)
     {
+        _logger.LogInformation($"{nameof(TradingEngineServer)} is starting.");
         while (!stoppingToken.IsCancellationRequested)
         {
             
         }
+        _logger.LogInformation($"{nameof(TradingEngineServer)} is stopping.");
         return Task.CompletedTask;
     }
 
     public Task Run(CancellationToken token) => ExecuteAsync(token);
+    protected override Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        throw new NotImplementedException();
+    }
 }
