@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i2B46DBlYo4=",
+  "dgSpecHash": "KvO5dZx+iOo=",
   "success": true,
-  "projectFilePath": "/home/kajusviliusis/RiderProjects/TradingEngineServer/LoggingCS/LoggingCS.csproj",
+  "projectFilePath": "/home/kajusviliusis/RiderProjects/TradingEngine/LoggingCS/LoggingCS.csproj",
   "expectedPackageFiles": [
     "/home/kajusviliusis/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "/home/kajusviliusis/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",

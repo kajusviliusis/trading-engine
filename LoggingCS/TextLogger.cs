@@ -15,7 +15,7 @@ public class TextLogger : AbstractLogger, ITextLogger
         var now = DateTime.Now;
         string directory = Path.Combine(_loggerConfiguration.TextLoggerConfiguration.Directory,$"{now:yy-MM-dd}");
         string uniqueLogName = $"{_loggerConfiguration.TextLoggerConfiguration.FileName}-{now:hh:mm:ss}";
-        string baseLogName = Path.Combine(uniqueLogName, _loggerConfiguration.TextLoggerConfiguration.FileExtension);
+        string baseLogName = Path.ChangeExtension(uniqueLogName, _loggerConfiguration.TextLoggerConfiguration.FileExtension);
         string filepath = Path.Combine(directory, baseLogName);
         Directory.CreateDirectory(directory);
         
@@ -25,7 +25,7 @@ public class TextLogger : AbstractLogger, ITextLogger
     private static async Task LogAsync(string filepath, BufferBlock<LogInformation> logQueue, CancellationToken token)
     {
         using var fs = new FileStream(filepath, FileMode.CreateNew, FileAccess.Write, FileShare.Read);
-        using var sw = new StreamWriter(fs);
+        using var sw = new StreamWriter(fs) { AutoFlush =  true };
 
         try
         {

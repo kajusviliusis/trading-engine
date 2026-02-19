@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/kajusviliusis/RiderProjects/TradingEngineServer/LoggingCS/LoggingCS.csproj": {}
+    "/home/kajusviliusis/RiderProjects/TradingEngine/LoggingCS/LoggingCS.csproj": {}
   },
   "projects": {
-    "/home/kajusviliusis/RiderProjects/TradingEngineServer/LoggingCS/LoggingCS.csproj": {
+    "/home/kajusviliusis/RiderProjects/TradingEngine/LoggingCS/LoggingCS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kajusviliusis/RiderProjects/TradingEngineServer/LoggingCS/LoggingCS.csproj",
+        "projectUniqueName": "/home/kajusviliusis/RiderProjects/TradingEngine/LoggingCS/LoggingCS.csproj",
         "projectName": "LoggingCS",
-        "projectPath": "/home/kajusviliusis/RiderProjects/TradingEngineServer/LoggingCS/LoggingCS.csproj",
+        "projectPath": "/home/kajusviliusis/RiderProjects/TradingEngine/LoggingCS/LoggingCS.csproj",
         "packagesPath": "/home/kajusviliusis/.nuget/packages/",
-        "outputPath": "/home/kajusviliusis/RiderProjects/TradingEngineServer/LoggingCS/obj/",
+        "outputPath": "/home/kajusviliusis/RiderProjects/TradingEngine/LoggingCS/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kajusviliusis/.nuget/NuGet/NuGet.Config"
