@@ -10,7 +10,15 @@ public class TextLogger : AbstractLogger, ITextLogger
     public TextLogger(IOptions<LoggerConfiguration> loggingConfiguration) : base()
     {
         _loggerConfiguration = loggingConfiguration.Value ??  throw new ArgumentNullException(nameof(loggingConfiguration));
-        string filepath = string.Empty;
+        if (_loggerConfiguration.LoggerType != LoggerType.Text)
+            throw new InvalidOperationException($"{nameof(TextLogger)} does not match LoggerType of {nameof(_loggerConfiguration.LoggerType)}.");
+        var now = DateTime.Now;
+        string directory = Path.Combine(_loggerConfiguration.TextLoggerConfiguration.Directory,$"{now:yy-MM-dd}");
+        string uniqueLogName = $"{_loggerConfiguration.TextLoggerConfiguration.FileName}-{now:hh:mm:ss}";
+        string baseLogName = Path.Combine(uniqueLogName, _loggerConfiguration.TextLoggerConfiguration.FileExtension);
+        string filepath = Path.Combine(directory, baseLogName);
+        Directory.CreateDirectory(directory);
+        
         _ = Task.Run(() => LogAsync(filepath, _logQueue, _tokenSource.Token));
     }
 
@@ -23,7 +31,7 @@ public class TextLogger : AbstractLogger, ITextLogger
         {
             while (true)
             {
-                var logItem = logQueue.ReceiveAsync(token).ConfigureAwait(false);
+                var logItem = await logQueue.ReceiveAsync(token).ConfigureAwait(false);
                 string formattedMessage = FormatLogItem(logItem);
                 await sw.WriteAsync(formattedMessage).ConfigureAwait(false);
             }
@@ -49,9 +57,31 @@ public class TextLogger : AbstractLogger, ITextLogger
 
     public void Dispose()
     {
-        throw new NotImplementedException();
+        Dispose(true);
+        GC.SuppressFinalize(this);
     }
-    
+
+    ~TextLogger()
+    {
+        Dispose(false);
+    }
+    protected virtual void Dispose(bool disposing)
+    {
+        lock (_lock)
+        {
+            if (_disposed)
+                return;
+            _disposed = true;
+        }
+
+        if (disposing)
+        {
+            _tokenSource.Cancel();
+            _tokenSource.Dispose();
+        }
+    }
     private BufferBlock<LogInformation> _logQueue = new BufferBlock<LogInformation>();
     private readonly CancellationTokenSource _tokenSource = new CancellationTokenSource();
+    private readonly object _lock = new object();
+    private bool _disposed = false;
 }

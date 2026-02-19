@@ -12,6 +12,7 @@ public sealed class TradingEngineServerHostBuilder
    {
       services.AddOptions();
       services.Configure<TradingEngineServerConfiguration>(context.Configuration.GetSection(nameof(TradingEngineServerConfiguration)));
+      services.Configure<LoggerConfiguration>(context.Configuration.GetSection(nameof(LoggerConfiguration)));
 
       services.AddSingleton<ITradingEngineServer, global::TradingEngineServer.Core.TradingEngineServer>();
       services.AddSingleton<ITextLogger, TextLogger>();
